@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  font-family: "Courier Prime", monospace;
+}
+
+body{
+  height: 100vh;
+  background: url('/src/assets/cool-background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
