@@ -15,7 +15,7 @@ const TimerComponent = () => {
     const [timers, setTimers] = useState([]);
     const [loading, setLoading] = useState(false);
     const [playingAudio, setPlayingAudio] = useState(false); // Add state for audio playing
-    const audioRef = useRef(new Audio('src/assets/oversimplified-alarm-clock-113180.mp3'));
+    const audioRef = useRef(new Audio('/oversimplified-alarm-clock-113180.mp3'));
     const timersCollectionRef = collection(db, "timers");
 
     const addTimer = async () => {
