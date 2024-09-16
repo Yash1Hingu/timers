@@ -3,15 +3,69 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
   font-family: "Courier Prime", monospace;
 }
 
-body{
-  height: 100vh;
-  background: url('/src/assets/cool-background.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+body::-webkit-scrollbar {
+  width: 12px;
+  /* Width of the scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* Track background */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #888;
+  /* Scrollbar color */
+  border-radius: 10px;
+  /* Rounded corners */
+  border: 2px solid #f1f1f1;
+  /* Adds space around the scrollbar */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+  /* Darker color on hover */
+}
+
+body {
+  min-height: 100vh;
+  background: url('/src/assets/cool-background.png') center / cover no-repeat fixed;
+  margin: 0;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  font-family: "Poppins", sans-serif;
+}
+
+.fadein {
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideInFromRight 1s forwards;
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

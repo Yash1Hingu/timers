@@ -1,8 +1,8 @@
-import React from 'react'
 import TimerComponent from './components/TimerComponent'
 import timerLogo from './assets/timer.svg';
 
 function App() {
+
   return (
     <div>
       <header
